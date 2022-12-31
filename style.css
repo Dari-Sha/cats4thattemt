@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.wrapper {
+    width: 1000px;
+    margin: auto;
+    min-height: 100vh;
+    background: lightsteelblue;
+    display: grid;
+    gap: 30px;
+    grid-template-rows: 100px 1fr 50px;
+}
+
+header, footer {
+    background-color: rgb(18, 75, 65);
+    color: rgb(237, 240, 239);
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+}
+
+header {
+    justify-content: space-between;
+}
+
+footer {
+    justify-content: center;
+    font-size: 14px;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+main {
+    padding: 0 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-content: flex-start;
+    gap: 30px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 8px;
+    box-shadow: 10px 20px 20px rgb(39, 89, 120);
+    background-color: rgb(205, 210, 232);
+}
+
+.card-pic {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #dedede;
+    border-radius: 5px;
+    height: 160px;
+}
+
+.card h3 {
+    text-align: center;
+}
+
+
+/* #windad {
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    padding: 15px;
+    border: 3px solid #5bc985;
+    border-radius: 10px;
+    color: #111406;
+    background-color: aliceblue;
+    display: none;
+    position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+#windad:target {display: block;} */
+
+
+.card-pic:hover{
+    transform: scale(1.05);
+    border-radius: 15px;
+    
+}
+.popup-wrapper {
+	position: fixed;
+	top:  0;
+	left:  0;
+	right:  0;
+	bottom:  0;
+	background-color: rgba(12, 12, 12, 0.533);
+	backdrop-filter: blur(1px);
+	justify-content: center;
+	align-items: center;
+	display:  none;
+}
+.popup-wrapper.active {
+	display: flex;
+}
+.popup {
+	width: 300px;
+	padding: 20px;
+	background-color: rgb(175, 159, 159);
+	position: relative;
+    display: none;
+}
+.popup.active{
+    display: block;
+}
+.popup__close {
+	width: 30px;
+	height: 30px;
+	border: 1px solid;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor:  pointer;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+.popup__close:hover {
+	background-color: rgb(180, 159, 159);
+	color:  rgb(10, 10, 10);
+	border-color: rgb(10, 10, 10);
+}
+.popup__close::before {
+	content: "\26CC";
+}
+
+form {
+	display: grid;
+	gap:  15px;
+}
+.btn{
+    font-size: 20px;
+    padding: 10px;
+}
+.logo{
+    font-size: 20px;
+    padding: 10px;
+}
+.descr-wrapper{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: aqua;
+	backdrop-filter: blur(1px);
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+.descr-wrapper.active{
+	display: flex;
+	width: 500px;
+}
+.descr{
+	width: 300px;
+	padding: 20px;
+	background-color: brown;
+	position: relative;
+}
+.descr__close{
+	width: 30px;
+	height: 30px;
+	border: 1px solid;
+	display: flex;
+}

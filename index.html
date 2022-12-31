@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Котячьи уголовники</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+        
+            <a href="" class="logo">Кошастики</a>
+            <nav>
+                <!-- <div id="windad">
+                    Добавить котэ
+                  </div> -->
+                  <a href="" class="btn" id="add">Добавить котика</a>
+            </nav>
+        </header>
+        <main>
+            
+            <!-- <div id="windad">
+                Добавить котэ
+              </div>
+               
+              <a href="#windad">Форма добавления котэ</a> -->
+        </main>
+        <footer>помогите, коты взяли меня в заложники и требуют их покормить</footer>
+    </div>
+
+
+    <div class="popup-wrapper">
+        <div class="popup popup-add">
+            <div class="popup__close"></div>
+            <div class="popup__content">
+                <form id="addForm">
+                    <h2>Добавить котика</h2>
+                    <input type="text" name="name" placeholder="Имя котика" required>
+                    <input type="number" name="id" placeholder="ID" required>
+                    <input type="text" name="img_link" placeholder="Ссылка на фото">
+                    <input type="number" name="age" placeholder="Возраст" min="0">
+                    <input type="number" name="rate" placeholder="Рейтинг" min="0" max="10"> 
+                    <label for="fav">
+                        <input type="checkbox" name="favourite">
+                        Любимчик
+                    </label>
+                    <textarea name="description" placeholder="Описание"></textarea>
+                    <button type="submit">Добавить</button>
+                </form>
+            </div>
+        </div>
+        <div class="popup popup-upd">
+            <div class="popup__close"></div>
+            <div class="popup__content">
+                <form id="updForm">
+                    <h2>Изменить котика</h2>
+                    <input type="text" name="name" placeholder="Имя котика" required>
+                    <input type="number" name="id" placeholder="ID" required>
+                    <input type="text" name="img_link" placeholder="Ссылка на картинку">
+                    <input type="number" name="age" placeholder="Возраст" min="0">
+                    <input type="number" name="rate" placeholder="Рейтинг" min="0" max="10"> 
+                    <label for="fav">
+                        <input type="checkbox" name="favourite">
+                        Любимчик
+                    </label>
+                    <textarea name="description" placeholder="Описание"></textarea>
+                    <button type="submit">Изменить</button>
+                </form>
+            </div>
+        <!-- </div>
+            <div class="descr-wrapper">
+                        <div class="descr"> 
+                    <div class="descr__close"></div>
+                         <div class="descr__content">
+                    <p> кот </p>
+        </div> -->
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
